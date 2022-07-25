@@ -1,0 +1,48 @@
+[LIVECODE ] PARKING LOT
+Enigmapark merupakan sebuah tempat parkir yang berada di kota jakarta dimana banyak pelanggan yang menitipkan kendaraannya di enigmapark.
+Karena pelanggan terlalu ramai, maka enigmapark membutuhkan sebuah aplikasi parkir yang dapat:
+
+FUNGSI parkinglot : 
+Fungsi ini berguna untuk membangun tempat parkir pertama kali, dengan rincian sebagai berikut:
+- Menentukan kapasitas tempat parkir sesuai dengan parameternya.
+- Pembuatan tempat parkir ini memerlukan waktu sebanyak 5000ms.
+- Mengembalikan 3 actions yaitu, park, leave, dan check.
+
+FUNGSI park : 
+Fungsi ini berguna untuk mendaftarkan kendaraan yang akan parkir di enigmapark, dengan rincian sebagai berikut:
+- Mendaftarkan kendaraan yang akan parkir, berupa object Car, dengan property nopol (Nomor Polisi) dan pemilik.
+- Terdapat validasi jika mobil dengan nopol tertentu sudah terparkir, maka mobil tersebut tidak dapat diparkir.
+- Terdapat validasi jika kapasitas tempat parkir penuh maka kendaraan tidak dapat masuk untuk diparkirkan.
+- proses parkir ini memerlukan waktu 3000ms.
+
+FUNGSI leave :
+Fungsi ini berguna untuk mengeluarkan kendaraan dari parking lot enigmapark, dengan rincian sebagai berikut:
+- Melakukan checkout (leave) kendaraan berdasarkan nopol kendaraan.
+- Terdapat validasi nopol kendaraan, yang bisa keluar hanya kendaran yang nopol-nya sudah terdaftar masuk ke tempat parkir.
+- proses checkout kendaraan memerlukan waktu 1500ms
+
+FUNGSI check : 
+Fungsi ini akan menampilkan informasi kapasitas parkir, sisa slot parkir yang kosong, dan kendaraan yang sedang parkir.
+- Proses check ini memerlukan waktu 500ms.
+- Proses check akan mengembalikan object ParkingLot.
+
+Note : Pakai Arrow Function Agar Terbiasa;
+
+2 class -> mobil dan parkir
+function 1 method 3
+
+OUTPUT  : 
+Tempat parkir berhasil dibuat dengan kapasitas 3 kendaraan
+Mobil Alex dengan Nopol BE001 berhasil parkir.
+{ capacity: 3, remaining: 2, parkedCars: [mobil1] }
+Mobil Blex dengan Nopol B2021 berhasil parkir.
+Mobil Blex dengan Nopol B2021 sudah keluar.
+Mobil Clex dengan Nopol C012 berhasil parkir.
+Mobil Dlex dengan Nopol D0101 berhasil parkir.
+Mobil dengan nopol B2019 tidak ada.
+Mohoh maaf parkir sudah penuh.
+Mobil Alex dengan Nopol BE001 sudah parkir sebelumnya.
+Mobil dengan nopol B2021 tidak ada.
+{ capacity: 3, remaining: 0, parkedCars: [mobil1, mobil3, mobil4] }
+Mobil Blex dengan nopol BE001 sudah keluar.
+{ capacity: 3, remaining: 1, parkedCars: [mobil3, mobil4] }
